@@ -1,0 +1,3 @@
+/Users/mikolaj/dev/think-like-programmer/chapter2/squares/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mikolaj/dev/think-like-programmer/chapter2/squares/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mikolaj/dev/think-like-programmer/chapter2/squares/cmake-build-debug/CMakeFiles/squares.dir

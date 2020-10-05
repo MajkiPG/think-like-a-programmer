@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mikolaj/dev/think-like-programmer/chapter4/untitled/main.cpp
+iostream
+-
+string
+-
+vector
+-
+algorithm
+-
+
