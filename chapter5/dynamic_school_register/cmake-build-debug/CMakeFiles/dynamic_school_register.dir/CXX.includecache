@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/dev/think-like-a-programmer/chapter5/dynamic_school_register/StudentRecord.h
+iostream
+-
+
+C:/dev/think-like-a-programmer/chapter5/dynamic_school_register/main.cpp
+iostream
+-
+StudentRecord.h
+C:/dev/think-like-a-programmer/chapter5/dynamic_school_register/StudentRecord.h
+
