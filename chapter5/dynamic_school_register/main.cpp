@@ -15,6 +15,7 @@ private:
 
 public:
     StudentCollection();
+    ~StudentCollection();
     void addRecord(StudentRecord newStudent);
     StudentRecord recordWithNumber(int studentID);
     void removeRecord(int studentID);
@@ -22,11 +23,18 @@ public:
 private:
     typedef studentNode* studentList;
     studentList _listHead;
+    void deleteList(studentList &listPtr);
+    studentLit copiedList(const studentList original);
 };
 
 StudentCollection::StudentCollection()
 {
     _listHead = NULL;
+}
+
+StudentCollection::~StudentCollection()
+{
+    deleteList(_listHead);
 }
 
 void StudentCollection::addRecord(StudentRecord newStudent)
@@ -68,6 +76,25 @@ void StudentCollection::removeRecord(int studentID)
     else
         trailing->next = loopPtr->next;
     delete loopPtr;
+}
+
+void StudentCollection::deleteList(studentList &listPtr)
+{
+    while (listPtr != NULL)
+    {
+        studentNode *tmp = listPtr;
+        listPtr = listPtr->next;
+        delete tmp;
+    }
+}
+
+StudentCollection::studentList StudentCollection::copiedList(cons studentList original)
+{
+    if (original == NULL)
+        return NULL;
+    StudentList newList = new studentNode;
+    newList->studentData = original->studentData;
+    studentNode *oldLoopPtr = original->next;
 }
 
 int main()
